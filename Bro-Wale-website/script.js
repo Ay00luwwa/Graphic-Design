@@ -8,7 +8,7 @@ let typingDisplay = document.getElementById("typingText");
     if (letter < text[currentText].length) {
         typingDisplay.textContent += text[currentText].charAt(letter);
         letter++;
-        setTimeout(type, 200);  // Determines the speed of typing
+        setTimeout(type, 100);  // Determines the speed of typing
     } else {
         // Pause before starting a new sentence
         setTimeout(() => {
