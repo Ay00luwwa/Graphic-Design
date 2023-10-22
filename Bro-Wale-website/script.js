@@ -16,6 +16,6 @@ let typingDisplay = document.getElementById("typingText");
             currentText = (currentText + 1) % text.length;
             letter = 0;
             type();
-        }, 2000);  // Determines the pause duration between texts
+        }, 1000);  // Determines the pause duration between texts
     }
 })();
