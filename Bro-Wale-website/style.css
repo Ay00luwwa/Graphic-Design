@@ -95,6 +95,8 @@ scrollbar
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;  
+  width: 100%;  
 }
 body {
   font-family: var(--ff-secondary);
@@ -102,6 +104,8 @@ body {
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
+  overflow-x: hidden;
+  width: 100%;
 }
 ul {
   list-style-type: none;
@@ -166,72 +170,6 @@ p {
 }
 
 
-
-
-
-#darkModeToggle:checked + .toggle {
-  background-color: #000; /* Change to any color you want for dark mode */
-}
-
-#darkModeToggle:checked + .toggle::after {
-  left: calc(100% - 5px);
-  transform: translateX(-100%);
-}
-/*smaller screens*/
-/* Default styles for larger screens */
-.dark-mode-switch {
-  position: fixed; 
-  top: 10px;
-  right: 10px;
-  z-index: 1000; 
-}
-
-/* Adjustments for smaller screens */
-@media (max-width: 768px) {
-  .dark-mode-switch {
-      top: 5px;
-      right: 5px;
-  }
-
-  .toggle {
-      width: 40px;
-      height: 20px;
-  }
-
-  .toggle::after {
-      width: 16px;
-      height: 16px;
-  }
-}
-
-@media (max-width: 768px) {  /* Adjust the breakpoint as needed */
-  .dark-mode-toggle {
-    position: absolute;  /* or relative, if the sidebar has a set height */
-    bottom: 10px;        /* space from the bottom */
-    right: 10px;         /* adjust if you want space from the right side, or change to 'left' if you prefer */
-  }
-}
-
-.larger-screens {
-  display: block;  /* Display by default */
-}
-
-.smaller-screens {
-  display: none;  /* Hide by default */
-}
-
-@media (max-width: 768px) {
-  .larger-screens {
-    display: none; /* Hide the large button */
-  }
-  
-  .smaller-screens{
-    display: block; /* Show the small button */
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-  }
-}
 
 
 
