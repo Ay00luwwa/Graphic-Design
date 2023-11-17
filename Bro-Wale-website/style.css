@@ -109,10 +109,11 @@ ul {
 a {
   text-decoration: none;
 }
-.nav-logo {
-  width: 25%;
+.nav-logo img {
+  width: 70px;
+  height: auto;
   display: inline-block;
-  position: relative;
+  padding-left: 20px;
 }
 
 h1,
